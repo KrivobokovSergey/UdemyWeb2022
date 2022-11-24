@@ -1,0 +1,22 @@
+.consultation {
+    min-height: 680px;
+    padding: 100px 0 92px 0;
+    background: url(../img/section3_BG.png) center (center/cover) no-repeat;
+    &__descr {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #fff;
+        margin-top: 8px;
+    }
+    .error {
+        border: 1px solid red;
+        text-align: center;
+        font-size: 13px;
+        margin: 3px 0;
+    }
+    label.error {
+        color: #fff;
+        border: none;
+    }
+}

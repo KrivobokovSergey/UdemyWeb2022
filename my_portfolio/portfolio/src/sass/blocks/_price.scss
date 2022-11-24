@@ -1,0 +1,52 @@
+.price {
+    position: relative;
+    padding: 120px 0 0 0;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .divider {
+        margin: 25px auto;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template: repeat(3, minmax(44px, auto)) / repeat(2, 370px);
+        row-gap: 20px;
+        justify-content: space-between;
+    }
+    &__item {
+        display: grid;
+        grid-template: minmax(21px, auto) 14px / 190px 125px;
+        justify-content: space-between;
+        align-content: space-between;
+        margin-left: 25px;
+    }
+    &__product {
+        position: relative;
+        @include before_circle;
+        &:before {
+            width: 15px;
+            height: 15px;
+            top: 2px;
+            left: -25px;
+        }
+    }
+    &__value {
+        text-align: right;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__descr {
+        grid-column: 1/3;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

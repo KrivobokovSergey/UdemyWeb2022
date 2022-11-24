@@ -1,0 +1,27 @@
+@mixin before_circle {
+    &:before {
+        content: '';
+        position: absolute;
+        top: -7px;
+        left: -10px;
+        width: 36px;
+        height: 36px;
+        background: $main-color;
+        border-radius: 100%;
+        z-index: -1;
+    }
+};
+
+@mixin before_circle_skills {
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 36px;
+        height: 36px;
+        background: $main-color;
+        border-radius: 100%;
+        z-index: -1;
+    }
+}

@@ -1,0 +1,82 @@
+.about-me {
+    margin-top: 120px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 400px 640px;
+        grid-template-rows: 240px 360px;
+    }
+    &__photo {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__descr {
+       grid-column: 2/3;
+       grid-row: 1/2; 
+       margin-top: 6px;
+       margin-left: 70px; 
+    }
+    &__subtitle {
+        position: relative;
+        @include before_circle;
+        margin-left: 10px;
+    }
+    &__title {
+        margin-top: 6px;
+    }
+    &__line {
+        width: 60px;
+        height: 3px;
+        background-color: $main-color;
+        margin-top: 4px;
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000;
+    }
+    &__skills {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 120px 120px;
+        margin-left: 70px;
+        margin-top: 40px;
+    }
+    &__skills-wrapper {
+        margin-left: 20px;
+    }
+    &__skill-text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color:#000;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 40px 220px;
+    }
+    &__icons {
+        position: relative;
+        display: block;
+        height: 38.5px;
+        @include before_circle_skills;
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            
+        }
+        img.right8px {
+            right: 6px;
+        }
+    }
+    
+}
